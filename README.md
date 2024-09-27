@@ -34,12 +34,13 @@ Download the extention named "Stylus" from your browser's extension shop.
   Now, on the code editor, paste this code:
   
   ```CSS
-  body{
-      display: none;
-  }
-  html{
-      background-color: #252525;
-  }
+main{
+    display: none;
+}
+html{
+    background-color:#252525!important;
+}
+
 ```
 
   Hit save
