@@ -132,14 +132,18 @@ div.main div.cardContainer {
 }
 
 div.main div.card {
-background-color: #2C2C2C;
+  background-color: #2C2C2C;
   width: 180px;
   height: 180px;
   margin-right: 5px;
-  flex-shrink: 0;
   border-radius: 12px;
   display: grid;
   justify-content: center;
+  transition-duration: 0.2s
+}
+div.main div.card:hover{
+  background-color:#333333;
+  transition-duration: 0.2s
 }
 
 div.main *::-webkit-scrollbar {
