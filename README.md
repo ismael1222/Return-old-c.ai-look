@@ -19,7 +19,7 @@ Works totally 100% on the client side
 [Firefox download](https://addons.mozilla.org/es/firefox/addon/tampermonkey/),
 [Chrome download](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 
-2. On this github page, click [here](https://github.com/ismael1222/Return-old-c.ai-look/releases/) for the latest release, click "Install" on the page that will open.
+2. On this github page, click [here](https://github.com/ismael1222/Return-old-c.ai-look/releases/latest/download/Old.c.ai.user.js) for the latest release, click "Install" on the page that will open.
    
   ## Is it done? **No! You still need to get rid of the ogly page (the new one)**
 Download the extention named "Stylus" from your browser's extension shop.
