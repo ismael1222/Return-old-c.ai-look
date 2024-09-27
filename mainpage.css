@@ -156,6 +156,7 @@ div.main div.card>img {
 	margin-left: 35px;
 	margin-top: 13px;
 	margin-bottom: 0px;
+	border-radius:10px;
 }
 
 div.main div.card>strong>p {
