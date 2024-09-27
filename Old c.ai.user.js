@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Old c.ai
 // @namespace    http://tampermonkey.net/
-// @version      0.1.0
+// @version      0.1.1
 // @description  Reskind the new site into good ol' looks with this script
 // @author       u/MaxGremory
 // @grant        GM_getResourceText
@@ -54,6 +54,9 @@ document.querySelectorAll('.relative.mb-2 img')
         document.querySelector('body').insertAdjacentHTML('beforeend', x);
     }
     function inicializacion(){
+        // PROFILE PAGE
+        document.querySelector("img.profilePic").src = document.querySelectorAll('.object-cover.object-top')[1].src.split("i/80/").join("i/200/")
+        //-------
         //CONTINUE CHATTING
         document.querySelectorAll("a.gap-2.group").forEach(character =>{
             let name = character.querySelector("p.text-md").innerHTML
