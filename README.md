@@ -32,6 +32,9 @@ Download the extention named "Stylus" from your browser's extension shop.
   body{
       display: none;
   }
+  html{
+      background-color:#252525
+  }
 ```
 
   Hit save
