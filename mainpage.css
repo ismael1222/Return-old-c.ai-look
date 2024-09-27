@@ -132,13 +132,14 @@ div.main div.cardContainer {
 }
 
 div.main div.card {
-	background-color: #2C2C2C;
-	width: 180px;
-	height: 180px;
-	margin-right: 5px;
-	flex-shrink: 0;
-	border-radius: 12px;
-	margin-top:-13px;
+background-color: #2C2C2C;
+  width: 180px;
+  height: 180px;
+  margin-right: 5px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  display: grid;
+  justify-content: center;
 }
 
 div.main *::-webkit-scrollbar {
@@ -152,12 +153,11 @@ div.main * {
 
 /* Those last two were to hide scrollbar (Used * because I cant figure out how to do it without it)*/
 div.main div.card>img {
-	width: 110px;
-	height: 110px;
-	margin-left: 35px;
-	margin-top: 13px;
-	margin-bottom: 0px;
-	border-radius:14px;
+width: 110px;
+  height: 110px;
+  margin-top: 13px;
+  margin-bottom: 0px;
+  border-radius: 14px;
 }
 
 div.main div.card>strong>p {
