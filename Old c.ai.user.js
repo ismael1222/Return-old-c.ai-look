@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Old c.ai
-// @namespace    http://tampermonkey.net/
+// @namespace    https://github.com/ismael1222/Return-old-c.ai-look
 // @version      0.1.2
 // @description  Reskind the new site into good ol' looks with this script
 // @author       u/MaxGremory
