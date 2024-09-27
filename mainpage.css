@@ -138,6 +138,7 @@ div.main div.card {
 	margin-right: 5px;
 	flex-shrink: 0;
 	border-radius: 12px;
+	margin-top:-13px;
 }
 
 div.main *::-webkit-scrollbar {
