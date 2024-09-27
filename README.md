@@ -12,6 +12,11 @@ It's toally safe and you can look at everything inside!
 
 Works totally 100% on the client side
 
+# What does this do?
+This script will change the character.ai looks so it can be used as the old one!!
+
+
+
 # How to use:
 ## Firefox, Chrome, and other browsers:
 1. Download the extention named "Tampermonkey" from your browser's extension shop.
