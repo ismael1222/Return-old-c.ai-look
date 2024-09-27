@@ -1,10 +1,3 @@
-# WORK IN PROGRESS DONT DO ANY OF THE STATED HERE UNTIL THIS MESSAGE DISSAPPEARS
-
-
-
-
-
-
 # Return old c.ai look!
 Get the ol' good looks with this script!
 
