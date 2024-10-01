@@ -193,4 +193,7 @@ main{
 html{
   background-color:#252525!important;
 }
+.hide{
+	display:none;
+}
 
