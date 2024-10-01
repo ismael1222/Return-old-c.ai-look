@@ -1,16 +1,4 @@
-@-moz-document url("https://character.ai/") {
-main{
-  display: none;
-}
-html{
-  background-color:#252525!important;
-}
-.hide{
-	display:none!important;
-}
-}
 
-@-moz-document regexp("https://character\\.ai/chat/([A-Za-z0-9]|\\_|\\-)+") {
 main main {
 	width: 100vw!important;
 	margin-left: 0!important;
@@ -34,5 +22,4 @@ p em{
 }
 .bg-surface-elevation-2, .bg-surface-elevation-3{
 	background-color:#252525
-}
 }
