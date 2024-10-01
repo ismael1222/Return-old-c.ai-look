@@ -187,3 +187,10 @@ div.footer a {
 	color: #378CD9;
 	margin-left: 5px;
 }
+main{
+  display: none!important;
+}
+html{
+  background-color:#252525!important;
+}
+
