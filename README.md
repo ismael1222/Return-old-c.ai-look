@@ -29,7 +29,7 @@ Download the extention named "Stylus" from your browser's extension shop.
   
   On top of the code editor, you'll see "Code 1: Everything". Change "Everything" to "URL"
   
-  Paste this URL: https://character.ai/
+  Paste this URL: https://character.ai
   
   Now, on the code editor, paste this code:
   
