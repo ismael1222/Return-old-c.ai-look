@@ -2,6 +2,7 @@
 // @name         Old c.ai indev
 // @namespace    https://github.com/ismael1222/Return-old-c.ai-look
 // @version      0.1.3
+// @updateURL    https://return-old-c-ai-look.vercel.app/Old%20c.ai.user.js
 // @description  Reskind the new site into good ol' looks with this script
 // @author       u/MaxGremory
 // @grant        GM_getResourceText
