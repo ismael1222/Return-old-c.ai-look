@@ -34,11 +34,11 @@ Download the extention named "Stylus" from your browser's extension shop.
   Reload and enjoy!
 
 
-  # Issues? Unusable webpage? How to disable?
+  # Issues? Unusable webpage? How to uninstall?
 
-  If you experience issues, i kindly invite you to screenshot the issue, and make an issue here on github
+  If you experience issues, I kindly invite you to screenshot the issue, and make an issue here on github
 
-  ## How to disable all this?
+  ## How to unninstall all this?
 
   ### Simple way:
   Uninstall Styluys and Tampermonkey
@@ -46,11 +46,15 @@ Download the extention named "Stylus" from your browser's extension shop.
 (Right click on the extension icon => "Uninstall extension")
 
   ### Still simple way:
-  Click on Stylus, and uncheck the box (see image below)
-  
-  ![image](https://github.com/user-attachments/assets/40d7d092-f4b1-45fd-a2a8-d854a07aa241)
+  Click on Stylus, click Manage.
+
+  Click the X button on the style to delete it.
 
   Same on Tampermonkey
-  
-  ![image](https://github.com/user-attachments/assets/635d5a5b-e3fb-4727-9c1d-1e925daf2a40)
+
+  Click Tampermonkey
+
+  Click Dashboard
+
+  Click the trash button on the script label
 
