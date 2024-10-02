@@ -10,6 +10,7 @@
 // @resource htmll https://return-old-c-ai-look.vercel.app/mainpage.html
 // @resource profpagehtml https://return-old-c-ai-look.vercel.app/profilepage.html
 // @updateURL https://return-old-c-ai-look.vercel.app/Old%20c.ai.user.js
+// @downloadURL https://return-old-c-ai-look.vercel.app/Old%20c.ai.user.js
 // ==/UserScript==
 (function() {
     'use strict';
