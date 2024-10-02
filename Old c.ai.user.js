@@ -1,15 +1,15 @@
 // ==UserScript==
 // @name         Old c.ai
 // @namespace    https://github.com/ismael1222/Return-old-c.ai-look
-// @version      0.2.2
+// @version      0.3.0
 // @description  Reskind the new site into good ol' looks with this script
 // @author       u/MaxGremory
 // @grant        GM_getResourceText
 // @match        https://character.ai/*
 // @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
 // @resource htmll https://return-old-c-ai-look.vercel.app/mainpage.html
+// @resource profpagehtml https://return-old-c-ai-look.vercel.app/profilepage.html
 // ==/UserScript==
-
 (function() {
     'use strict';
     var lastPage = ""
@@ -17,14 +17,11 @@
         //funcion para crear nua tarjeta (solo main, se puede dejar aqui)
         function createCard(charName, imageURL, charURL , element){
             let card = `<a href="${charURL}"><div class="card"><img src="${imageURL}" alt="${charName}"><strong><p>${charName}</p></strong></div></a>`
-        let container = document.querySelectorAll('.cardContainer')[element]
-        container.insertAdjacentHTML('beforeend', card)
+    let container = document.querySelectorAll('.cardContainer')[element]
+    container.insertAdjacentHTML('beforeend', card)
         }
         //funcion para pegar la main page
         function pastePage(){
-            let css = "<link rel='stylesheet' href='https://return-old-c-ai-look.vercel.app/mainpage.css'>"
-            //<link rel='stylesheet' href='https://return-old-c-ai-look.vercel.app/importStyles.css'>
-            document.querySelector("body").insertAdjacentHTML("beforeend", css)
             let x = GM_getResourceText("htmll");
             document.querySelector('body').insertAdjacentHTML('beforeend', x);
         }
@@ -66,17 +63,16 @@
                 createCard(name, imageURL, charURL, 2)
             })
             //INICIALIZACION TERMINADA, CARDS PUESTAS:
-            setTimeout(()=>{
-                document.querySelector('div.mainDiv').classList.remove("hide")
-                document.querySelector("div.loading").classList.add("hide")
-            },50)
+            document.querySelector('div.mainDiv').classList.remove("hide")
+            document.querySelector("div.loading").classList.add("hide")
+
         }
         //se pega la main page
         pastePage();
         //se empieza timer para ver cuando carga la main page original
         //y cuando carga, se inicializa
         function start(){
-            let testSubject = document.querySelectorAll("li.mb-6")[2].querySelectorAll(".swiper-slide.pr-2")[0]
+            let testSubject = document.querySelectorAll("li.mb-6")[2]?.querySelectorAll(".swiper-slide.pr-2")[0]
             if(testSubject !== undefined){
                 clearInterval(testInterval)
                 inicializacion()
@@ -93,26 +89,33 @@
         let charImageINCHAT = document.querySelector(".flex.gap-3 > a")
         nameObject.insertAdjacentHTML("beforeend", chatnumber)
         charImageINCHAT.insertAdjacentHTML("beforebegin", "<a href='/'>⮜</a>")
-        let css = "<link rel='stylesheet' href='https://return-old-c-ai-look.vercel.app/chatpage.css'>"
-        document.querySelector("body").insertAdjacentHTML("beforeend", css)
+
+    }
+    function loadProfilePage(){
+        let x = GM_getResourceText("profpagehtml");
+        document.querySelector('main main').insertAdjacentHTML('afterbegin', x);
+        let origPic = document.querySelectorAll('.object-cover.object-top')[1]
+        let pic = "#"
+        origPic?pic = origPic.src.split("i/80/").join("i/200/"):false;
+        document.querySelector("img.profilePic").src = pic
 
     }
     setInterval(()=>{
         if(lastPage !== window.location.href){
-            if(/https\:\/\/character\.ai\/chat\/([a-z0-9]|\_)+/gi.test(window.location.href)){
+            if(/https\:\/\/character\.ai\/chat\/.+/gi.test(window.location.href)){
                 console.log("GOTTA LOAD CHATS")
-                lastPage = window.location.href
-                loadChatPage()
+                setTimeout(loadChatPage, 1000)
             }else if(/https\:\/\/character\.ai\/$/gi.test(window.location.href)){
                 console.log("GOTTA LOAD MAIN")
-                lastPage = window.location.href
                 loadMainPage()
+            }else if(/https\:\/\/character\.ai\/profile\/.+$/gi.test(window.location.href)){
+                //https://character.ai/profile/TePasoElName
+                console.log("GOTTA LOAD PROFILE")
+                loadProfilePage()
             }else{
                 console.error("PAGE NOT RECOGNIZED. PLEASE REPORT THIS ISSUE ALONG WITH THE URL PROVIDED ON THIS MESSAGE.\n"+window.location.href)
-                lastPage = window.location.href
             }
-            //window.location.href == "https://character.ai/"?loadMainPage():false
-
+            lastPage = window.location.href
         }
     }, 1000)
 
