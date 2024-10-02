@@ -10,11 +10,11 @@ This script will change the character.ai looks so it can be used as the old one!
 
 
 
-# How to use:
+# How-to install and use:
 ## Firefox, Chrome, and other browsers:
 1. Download the extention named "Tampermonkey" from your browser's extension shop.
 
-[Firefox download](https://addons.mozilla.org/es/firefox/addon/tampermonkey/),
+[Firefox download](https://addons.mozilla.org/es/firefox/addon/tampermonkey/), 
 [Chrome download](https://chromewebstore.google.com/detail/tampermonkey/dhdgffkkebhmkfjojejmpbldmpobfkfo)
 
 2. On this github page, click [here](https://github.com/ismael1222/Return-old-c.ai-look/releases/latest/download/Old.c.ai.user.js) for the latest release, click "Install" on the page that will open.
@@ -22,28 +22,12 @@ This script will change the character.ai looks so it can be used as the old one!
   ## Is it done? **No! You still need to get rid of the ogly page (the new one)**
 Download the extention named "Stylus" from your browser's extension shop.
 
-  [Firefox download](https://addons.mozilla.org/es/firefox/addon/styl-us/),
+  [Firefox download](https://addons.mozilla.org/es/firefox/addon/styl-us/), 
   [Chrome download](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
   
-  Once installed, click the extension icon => Click "Manage" => "Create new style"
-  
-  On top of the code editor, you'll see "Code 1: Everything". Change "Everything" to "URL"
-  
-  Paste this URL: https://character.ai
-  
-  Now, on the code editor, paste this code:
-  
-  ```CSS
-main{
-    display: none;
-}
-html{
-    background-color:#252525!important;
-}
+  Once installed click this link: [Install Style](https://userstyles.world/style/18410/old-c-ai)
 
-```
-
-  Hit save
+  Click the blue install button and install the Style
   
   Close that tab and go back to character.ai
   
