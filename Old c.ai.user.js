@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name         Old c.ai
 // @namespace    https://github.com/ismael1222/Return-old-c.ai-look
-// @version      0.3.0
+// @version      0.3.1
 // @description  Reskind the new site into good ol' looks with this script
 // @author       u/MaxGremory
 // @grant        GM_getResourceText
@@ -104,7 +104,7 @@
         if(lastPage !== window.location.href){
             if(/https\:\/\/character\.ai\/chat\/.+/gi.test(window.location.href)){
                 console.log("GOTTA LOAD CHATS")
-                setTimeout(loadChatPage, 1000)
+                setTimeout(loadChatPage, 2000)
             }else if(/https\:\/\/character\.ai\/$/gi.test(window.location.href)){
                 console.log("GOTTA LOAD MAIN")
                 loadMainPage()
