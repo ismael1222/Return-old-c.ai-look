@@ -19,7 +19,6 @@
 	.hide {
 		display: none!important;
 	}
-	@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,400;1,400&display=swap');
 	* {
 		color: #DFDFDF;
 	}
@@ -106,7 +105,7 @@
 	div.leftbar .button a p {
 		margin: 0;
 		text-align: center;
-		font-family: 'Kanit'
+		font-family: ui-sans-serif, system-ui, ui-sans-serif, sans-serif
 	}
 	div.leftbar div.button.home {
 		border-radius: 0px 15px 0px 0px;
@@ -119,7 +118,7 @@
 		margin-left: calc(110px);
 	}
 	div.main > p {
-		font-family: "Kanit";
+		font-family: ui-sans-serif, system-ui, ui-sans-serif, sans-serif;
 		margin-top: calc(1em + 10px);
 		margin-bottom: 1em;
 	}
@@ -160,7 +159,7 @@
 	}
 	div.main div.card > strong > p {
 		text-align: center;
-		font-family: "Kanit";
+		font-family: ui-sans-serif, system-ui, ui-sans-serif, sans-serif;
 		font-size: small;
 	}
 	div.separator {
@@ -319,7 +318,7 @@
 	div.leftbar .button a p {
 		margin: 0;
 		text-align: center;
-		font-family: 'Kanit'
+		font-family: ui-sans-serif, system-ui, ui-sans-serif, sans-serif
 	}
 	div.leftbar div.button.home {
 		border-radius: 0px 15px 0px 0px;
