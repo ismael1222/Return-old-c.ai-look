@@ -1,7 +1,7 @@
 
 /* ==UserStyle==
 @name           Old C.AI
-@version        0.2.1
+@version        0.2.3
 @description    Old C.AI required CSS Style to work
 @author         u/MaxGremory
 @namespace      oldcai
@@ -151,8 +151,9 @@
 	}
 	/* Those last two were to hide scrollbar (Used * because I cant figure out how to do it without it)*/
 	div.main div.card > img {
-		width: 110px;
-		height: 110px;
+		max-width: 110px;
+		max-height: 110px;
+		margin:auto;
 		margin-top: 13px;
 		margin-bottom: 0px;
 		border-radius: 14px;
