@@ -25,7 +25,7 @@ Download the extention named "Stylus" from your browser's extension shop.
   [Firefox download](https://addons.mozilla.org/es/firefox/addon/styl-us/), 
   [Chrome download](https://chromewebstore.google.com/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne)
   
-  Once installed click this link: [Install Style](https://userstyles.world/style/18410/old-c-ai)
+  Once installed click this link: [Install Style](https://return-old-c-ai-look.vercel.app/all.user.css)
 
   Click the blue install button and install the Style
   
