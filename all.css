@@ -1,7 +1,6 @@
-
 /* ==UserStyle==
 @name           Old C.AI
-@version        0.2.3
+@version        0.3.4
 @description    Old C.AI required CSS Style to work
 @author         u/MaxGremory
 @namespace      oldcai
@@ -9,7 +8,8 @@
 @supportURL     https://github.com/ismael1222/Return-old-c.ai-look/issues
 @updateURL      https://return-old-c-ai-look.vercel.app/all.css
 ==/UserStyle== */
-@-moz-document url("https://character.ai/") {
+@-moz-document regexp("https\\:\\/\\/character\\.ai\\/(\\?.*)?") {
+	/*GENERAL*/
 	main {
 		display: none!important;
 	}
@@ -26,6 +26,7 @@
 		margin: 0;
 		background-color: #252525;
 	}
+	/*NAV*/
 	div.navbar {
 		height: 61.7px;
 		width: 100vw;
@@ -67,6 +68,7 @@
 		width: 28px;
 		margin: 0;
 	}
+	/*LEFT NAV*/
 	div.leftbar {
 		position: fixed;
 		background-color: #252525;
@@ -113,6 +115,7 @@
 	div.leftbar div.community.button {
 		border-radius: 0px 0px 15px 0px;
 	}
+	/*MAIN CONTENT*/
 	div.main {
 		padding-top: 60px;
 		margin-left: calc(110px);
@@ -122,6 +125,24 @@
 		margin-top: calc(1em + 10px);
 		margin-bottom: 1em;
 	}
+	div.main *::-webkit-scrollbar {
+		display: none;
+	}
+	div.main * {
+		-ms-overflow-style: none;
+		scrollbar-width: none;
+	}
+	div.loading {
+		display: flex;
+		align-content: center;
+		justify-content: center;
+		height: 100vh;
+	}
+	div.loading h1 {
+		font-size: xx-large;
+		margin-top: 150px;
+	}
+	/*CARDS*/
 	div.main div.cardContainer {
 		display: flex;
 		overflow-y: scroll;
@@ -142,18 +163,10 @@
 		background-color: #333333;
 		transition-duration: 0.2s
 	}
-	div.main *::-webkit-scrollbar {
-		display: none;
-	}
-	div.main * {
-		-ms-overflow-style: none;
-		scrollbar-width: none;
-	}
-	/* Those last two were to hide scrollbar (Used * because I cant figure out how to do it without it)*/
 	div.main div.card > img {
 		max-width: 110px;
 		max-height: 110px;
-		margin:auto;
+		margin: auto;
 		margin-top: 13px;
 		margin-bottom: 0px;
 		border-radius: 14px;
@@ -163,6 +176,10 @@
 		font-family: ui-sans-serif, system-ui, ui-sans-serif, sans-serif;
 		font-size: small;
 	}
+	div.main div.cardContainer.dropdown {
+		display: flex
+	}
+	/*GENERIC*/
 	div.separator {
 		background-color: rgb(58, 58, 58);
 		height: 3px;
@@ -177,16 +194,6 @@
 	div.footer a {
 		color: #378CD9;
 		margin-left: 5px;
-	}
-	div.loading {
-		display: flex;
-		align-content: center;
-		justify-content: center;
-		height: 100vh;
-	}
-	div.loading h1 {
-		font-size: xx-large;
-		margin-top: 150px;
 	}
 }
 @-moz-document regexp("https\\:\\/\\/character\\.ai\\/chat\\/.+") {
@@ -326,5 +333,16 @@
 	}
 	div.leftbar div.community.button {
 		border-radius: 0px 0px 15px 0px;
+	}
+}
+@-moz-document regexp("https\\:\\/\\/character\\.ai\\/search.*") {
+	main main {
+		width: 100vw!important;
+		margin-left: 0!important;
+		max-width: 100vw!important;
+		background-color: #252524;
+	}
+	main div.w-64 {
+		display: none;
 	}
 }
